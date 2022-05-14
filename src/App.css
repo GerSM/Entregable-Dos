@@ -1,38 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0D7BDB, white );
+  background-repeat: no-repeat;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  }
+
+.weather-card{
+  margin: 25px auto;
+  padding: 20px;
+  border: 1px solid rgb(18, 141, 248);
+  border-radius: 25px;
+  box-shadow: 10px 10px 25px;
+  width: 400px;
+  height: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+section{
+  background-color: #0D7BDB; 
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-change {
+  border: 0;
+  background-color: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 25px;
+  text-decoration: none;
+  text-transform: uppercase; 
+  font-size: 18px;
+  border-radius: 40px;
+  box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
+              inset -2px -2px 12px rgba(255,255,255,1),
+              inset 2px 2px 4px rgba(255,255,255,0.5),
+              inset 2px 2px 8px rgba(0, 0, 0, 15); 
+              cursor: pointer; 
+}  
+
+.button-change:hover{
+  display: inline-block;
+  transform: scale(.9);
+  cursor: pointer;
+}
+.dates{
+  list-style: none;
+}
+.dates li{
+  padding: 1px;
+  margin: 2px;
 }
